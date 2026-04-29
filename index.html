@@ -135,7 +135,7 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/DICT-Logo-icon_only.png" class="h-14 w-auto mx-auto mb-4">
       <h2 class="text-2xl font-black text-slate-900 dark:text-white mb-1">eLGU Monitoring</h2>
       <p class="text-xs text-slate-500 dark:text-slate-400 mb-6 uppercase font-bold tracking-widest">DILG — Authorized Access Only</p>
-      <div id="g_id_onload" data-client_id="726042753648-3eoombs2l6tlji29lbcsi4bqg4p7adfh.apps.googleusercontent.com" data-callback="handleGoogleLogin" data-auto_prompt="false"></div>
+      <div id="g_id_onload" data-client_id="YOUR_GOOGLE_CLIENT_ID" data-callback="handleGoogleLogin" data-auto_prompt="false"></div>
       <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left" data-width="280"></div>
       <p class="text-[10px] text-slate-400 mt-4">Only authorized Google accounts can access this system.</p>
     </div>
@@ -1443,7 +1443,7 @@
       document.getElementById('cmpLabelA').innerText = compareState.A; document.getElementById('cmpLabelB').innerText = compareState.B;
       document.getElementById('cmpChangedBig').innerText = compareState.changedRows.length;
       document.getElementById('cmpSubtitle').innerText = `${compareState.A} vs ${compareState.B}`;
-      const keys = [{k:'op', l:'Operational', c:'green'}, {k:'dev', l:'Developmental', c:'blue'}, {k:'loi', l:'With LOI', c:'yellow'}, {k:'No', l:'No LOI', c:'red'}];
+      const keys = [{k:'op', l:'Operational', c:'green'}, {k:'dev', l:'Developmental', c:'blue'}, {k:'loi', l:'With LOI', c:'yellow'}, {k:'no', l:'No LOI', c:'red'}];
       const htmlStats = keys.map(i => {
          const v1 = compareState.statsA[i.k]; const v2 = compareState.statsB[i.k];
          const diff = v2 - v1;
